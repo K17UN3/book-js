@@ -29,9 +29,19 @@
 </footer>
 <script>
 'use strict';
+// 変数はP71の表、半角スペース、１文字目に数字、予約語 ×
+// let answer = "アンサー"
+// answer = "あんさー"
 
-let answer = window.prompt('ヘルプを見ますか？');
-console.log(answer);
+// let(変数) は {}(ブロック) の中じゃないと生き残れない
+if (window.confirm('ゲームスタート！準備はいい？')) {
+    let answer = "yes"
+    console.log(answer); // ??
+} else {
+    let answer = "no"
+    console.log(answer);
+}
+
 </script>
 </body>
 </html>
