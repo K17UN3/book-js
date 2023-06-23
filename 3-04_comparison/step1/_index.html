@@ -28,24 +28,21 @@
 </div><!-- /.container -->
 </footer>
 <script>
-    'use script';
+'use strict';
 
-    const number = Math.floor(Math.random() * 6);
-    const answer = parseInt(window.prompt('数当てゲーム。０～５の数字を入力してください！'));
-    // parseInt(変換したい文字列)
-
-    let message;
-    if (answer === number) {
-        message = 'あたり！';
-    } else if (answer < number) {
-        message = '残念、もっと大きいです！';
-    } else if (answer > number) {
-        message = '残念、もっと小さいです！';
-    } else {
-        message = '０～５の数字を入力してください！';
-    }
-
-    window.alert(message);
+const number = Math.floor(Math.random() * 6);
+const answer = parseInt(window.prompt('数当てゲーム。0〜5の数字を入力してね。'));
+let message;
+if(answer === number) {
+    message = 'あたり！';
+} else if(answer < number) {
+    message = '残念でした！もっと大きい';
+} else if(answer > number) {
+    message = '残念でした！もっと小さい';
+} else {
+    message = '0〜5の数字を入力してね。';
+}
+window.alert(message);
 </script>
 </body>
 </html>
