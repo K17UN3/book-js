@@ -17,5 +17,6 @@ function FizzBuzz (num) {
         return num;
     }
 }
+// return で実行は止まる
 
 console.log(FizzBuzz(3));
