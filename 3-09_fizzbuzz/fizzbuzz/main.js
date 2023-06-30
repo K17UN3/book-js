@@ -19,4 +19,10 @@ function FizzBuzz (num) {
 }
 // return で実行は止まる
 
-console.log(FizzBuzz(3));
+// 1~10000回繰り返す
+
+let i = 1;
+while(i <= 10000) {
+    console.log(FizzBuzz(i));
+    i += 1;
+}
